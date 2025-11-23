@@ -1,0 +1,27 @@
+create table sys_product
+(
+    name           varchar(255)                       not null comment '产品名称',
+    id             bigint auto_increment
+        primary key,
+    category       varchar(50)                        not null comment '分类: rotor, wing, vtol, payload',
+    image_url      varchar(500)                       null comment '列表缩略图',
+    description    varchar(500)                       null comment '简短描述',
+    detail_content longtext                           null comment '富文本详情HTML',
+    create_time    datetime default CURRENT_TIMESTAMP null,
+    specs          json                               null comment '规格参数JSON字符串'
+);
+
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('1', 16, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('2', 17, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('3', 18, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('4', 19, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('5', 20, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('6', 21, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('7', 22, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('8', 23, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('9', 24, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('10', 25, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('11', 26, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('12', 27, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('14', 28, 'rotor', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '高效电力巡检，支持红外热成像。', '<p>这是详细介绍HTML...</p>', '2025-11-22 02:56:07', '[{"name": "续航", "value": "60min"}, {"name": "载重", "value": "5kg"}]');
+INSERT INTO uav_website.sys_product (name, id, category, image_url, description, detail_content, create_time, specs) VALUES ('15', 29, 'wing', 'https://aosspic10001.websiteonline.cn/pro58a77549/image/370c.png', '长航时固定翼，高精度RTK定位。', '<p>测绘专用...</p>', '2025-11-22 02:56:07', '[{"name": "翼展", "value": "2.4m"}]');

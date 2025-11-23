@@ -1,0 +1,16 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: drone
+  datasource:
+    url: jdbc:mysql://116.198.201.161:3306/uav_website?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root  # ???????
+    password: mysql_8TaaNi  # ???????
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # ????????
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # ?????SQL
